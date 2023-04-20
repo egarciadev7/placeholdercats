@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PlaceHolderCats</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="list_is_empty">List is empty</string>
+    <string name="something_is_wrong">Something is wrong</string>
+    <string name="intelligence">Intelligence: %s</string>
+    <string name="cat_breeds">Catbreeds</string>
+</resources>

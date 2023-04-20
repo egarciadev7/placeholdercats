@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.App.Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/primary</item>
+        <item name="titleTextColor">@android:color/white</item>
+        <item name="navigationIconTint">@android:color/white</item>
+    </style>
+
+    <style name="primary_text">
+        <item name="android:textColor">@color/primary</item>
+    </style>
+
+    <style name="primary_text_bold" parent="primary_text">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="secondary_text">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="post_button" parent="primary_text">
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+</resources>
