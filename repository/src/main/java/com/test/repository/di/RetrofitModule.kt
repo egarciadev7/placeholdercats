@@ -8,10 +8,13 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
+import okhttp3.Interceptor
 import okhttp3.OkHttpClient
+import okhttp3.Request
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Named
+
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -37,6 +40,11 @@ object RetrofitModule {
     fun provideOkHttpClient(
     ): OkHttpClient {
         val clientBuilder = OkHttpClient.Builder()
+        clientBuilder.addInterceptor(Interceptor { chain ->
+            val request: Request =
+                chain.request().newBuilder().addHeader("x-api-key", BuildConfig.API_KEY).build()
+            chain.proceed(request)
+        })
         return clientBuilder.build()
     }
 }

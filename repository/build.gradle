@@ -34,16 +34,19 @@ android {
         debug {
             buildConfigField("String", "API_URL", "\"https://api.thecatapi.com/v1/\"")
             buildConfigField("String", "CDN_URL", "\"https://cdn2.thecatapi.com/images/\"")
+            buildConfigField("String", "API_KEY", "bda53789-d59e-46cd-9bc4-2936630fde39")
         }
 
         qa {
             buildConfigField("String", "API_URL", "\"https://api.thecatapi.com/v1/\"")
             buildConfigField("String", "CDN_URL", "\"https://cdn2.thecatapi.com/images/\"")
+            buildConfigField("String", "API_KEY", "bda53789-d59e-46cd-9bc4-2936630fde39")
         }
 
         release {
             buildConfigField("String", "API_URL", "\"https://api.thecatapi.com/v1/\"")
             buildConfigField("String", "CDN_URL", "\"https://cdn2.thecatapi.com/images/\"")
+            buildConfigField("String", "API_KEY", "bda53789-d59e-46cd-9bc4-2936630fde39")
         }
     }
     compileOptions {
